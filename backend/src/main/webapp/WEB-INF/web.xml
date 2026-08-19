@@ -18,4 +18,14 @@
         <url-pattern>/api/health</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>AuthServlet</servlet-name>
+        <servlet-class>com.orbitstore.controller.AuthServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AuthServlet</servlet-name>
+        <url-pattern>/api/auth/*</url-pattern>
+    </servlet-mapping>
+
 </web-app>
