@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#020307" />
+
+    <meta
+      name="description"
+      content="Orbit Store — Everything you need revolves around one place."
+    />
+
+    <title>Orbit Store</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.cdnfonts.com/css/chakra-petch-2"
+      rel="stylesheet"
+    />
+
+    <style>
+      .brand-name,
+      .brand-subtitle {
+        font-family: "Chakra Petch", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =====================================
+         THINKING ORB LOADER
+         ===================================== -->
+
+    <div id="orb-loader" aria-live="polite" aria-label="Loading Orbit Store">
+      <div class="orb-loader-center">
+        <canvas id="thinking-orb" aria-hidden="true"></canvas>
+
+        <div id="orb-loading-percentage" aria-hidden="true">0%</div>
+      </div>
+    </div>
+
+    <!-- =====================================
+         WEBGL FALLBACK
+         ===================================== -->
+
+    <div id="webgl-fallback" aria-hidden="true">
+      <div class="fallback-orbit-o"></div>
+    </div>
+
+    <!-- =====================================
+         WEBGL SCENE
+         ===================================== -->
+
+    <canvas id="webgl"></canvas>
+
+    <!-- =====================================
+         STARTUP UI
+         ===================================== -->
+
+    <main class="startup">
+      <!-- Logo -->
+
+      <div class="brand">
+        <div class="brand-name">ORBIT</div>
+
+        <div class="brand-subtitle">STORE</div>
+      </div>
+
+      <!-- Tagline -->
+
+      <div class="tagline">
+        <div>EVERYTHING YOU NEED</div>
+
+        <div>
+          REVOLVES AROUND
+          <span>ONE PLACE.</span>
+        </div>
+      </div>
+
+      <!-- Enter Orbit -->
+
+      <div
+        class="enter-orbit"
+        id="enterOrbit"
+        role="button"
+        tabindex="0"
+        aria-label="Enter Orbit Store"
+      >
+        ENTER ORBIT
+      </div>
+    </main>
+
+    <!-- =====================================
+         APPLICATION
+         ===================================== -->
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
