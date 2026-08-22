@@ -58,4 +58,14 @@
         <url-pattern>/api/products</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ProductImageServlet</servlet-name>
+        <servlet-class>com.orbitstore.controller.ProductImageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProductImageServlet</servlet-name>
+        <url-pattern>/api/product-images</url-pattern>
+    </servlet-mapping>
+
 </web-app>
