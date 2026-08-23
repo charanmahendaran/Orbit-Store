@@ -60,4 +60,20 @@ SELECT
 FROM cart_items
 ORDER BY id;
 
-SELECT * FROM cart_items WHERE id = 1;
+SELECT * FROM cart_items WHERE cart_id = 1;
+
+USE orbit_store;
+
+SELECT
+    id,
+    name,
+    sku,
+    price,
+    stock_quantity,
+    status
+FROM products
+WHERE id = 1;
+
+SELECT *
+FROM wishlist_items
+WHERE wishlist_id = 1;

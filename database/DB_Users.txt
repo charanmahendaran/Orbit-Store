@@ -1,0 +1,9 @@
+{
+  "email": "testcustomer@orbitstore.com",
+  "password": "Test@12345"
+}
+
+{
+  "email": "cart.tester@orbitstore.com",
+  "password": "OrbitCart@2026"
+}
